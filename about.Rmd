@@ -1,0 +1,16 @@
+---
+title: "My Acamdemic"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+My name is Paula, and I am currently a first-year MS student in Biostatistics with a track in Public Health and Data Science. 
+
+I graduated from University of Rochester in 2021, and earned a BS degree in Brain and Cognitive Science, a BA degree in Data Science, and a minor in General Psychology.
+
+For more information, please see my Curriculum Vitae below. 
+
+
+Back to the [homepage](index.html)

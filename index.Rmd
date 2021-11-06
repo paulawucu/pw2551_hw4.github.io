@@ -1,0 +1,30 @@
+---
+title: "Paula Wu's Website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+<br>
+
+## Welcome, welcome!
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<img src="images/honk_goose.jpeg" style="width:50%">
+
+My name is Paula. I am currently a first-year MS student in Biostatistics.  
+
+<br>
+
+# Website Navigation
+* Scroll down for more information
+* Click the "About" menu on the top navigation bar to learn more about me.
+* Click icons on the top right for direct message via email and links to my github and LinkedIn page (still under construction).
+* Happy exploring!
+
+
