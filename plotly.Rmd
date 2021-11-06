@@ -4,47 +4,84 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+    source: embed
 ---
-
-Here is the flexible dashboard for visualization and interaction of the data set `Instacart`
-
+Back to the [homepage](index.html)
 ```{r setup, include=FALSE}
 library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
+library(lubridate)
 ```
 
-load in dataset
 ```{r}
+# load in dataset
 data(instacart)
 ```
+```{r}
+instacart = 
+  instacart %>% 
+  select(reordered, order_dow, order_hour_of_day, product_name, aisle, department)
+```
+
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Lineplot
 
-```{r}
-
+```{r, warning=FALSE}
+# distribution of number of reorders during a day across a week
+instacart %>% 
+  filter(reordered == 1) %>% 
+  mutate(order_dow = wday(order_dow+1, label = TRUE, abbr = FALSE)) %>% 
+  group_by(order_dow, order_hour_of_day) %>%
+  summarize(n_obs = n()) %>% 
+  plot_ly(x = ~order_hour_of_day, y = ~n_obs, color = ~order_dow, 
+          type = "scatter", colors = "viridis", mode = "markers") %>% 
+  add_lines(showlegend=FALSE) %>% 
+  layout(
+    title = "Number of Reorders: Each Day Across Week",
+    xaxis = list(title="Hour in a day"),
+    yaxis = list(title="Number of Reorders")
+  )
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Barplot
 
-```{r}
-
+```{r, message=FALSE}
+# reordered times and department
+instacart %>% 
+  count(department, reordered) %>% 
+  filter(reordered == 1) %>%  # only focus on reorders
+  mutate(department = fct_reorder(department, n)) %>% 
+  plot_ly(x = ~department, y = ~n, color = ~department, type = "bar", colors = "viridis") %>% 
+  layout(
+    title = "Numbers of Reorders in Each Department",
+    xaxis = list(title="Department Name"),
+    yaxis = list(title="# of Reorder")
+  )
 ```
 
-### Chart C
+### Boxplot
 
 ```{r}
-
+# hour of the day that reorders happens
+instacart %>% 
+  filter(reordered == 1) %>% 
+  group_by(order_dow) %>% 
+  mutate(order_dow = wday(order_dow+1, label = TRUE, abbr = FALSE)) %>%  # re-code the variable order_dow
+  plot_ly(x = ~order_dow, y = ~order_hour_of_day, color = ~order_dow, type = "box", colors = "viridis") %>% 
+  layout(
+    title = "Reordered Hour: Each Day of the Week",
+    xaxis = list(title="Day of the Week"),
+    yaxis = list(title="Hour in a Day")
+  )
 ```
 
 
 
-
-Back to the [homepage](index.html)

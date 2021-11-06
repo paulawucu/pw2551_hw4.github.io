@@ -23,7 +23,8 @@ My name is Paula. I am currently a first-year MS student in Biostatistics.
 
 # Website Navigation
 * Scroll down for more information
-* Click the "About" menu on the top navigation bar to learn more about me.
+* Click the "About" drop-down menu on the top navigation bar to learn more about me.
+* Click the "Plotly" tab to see the flexdashboard
 * Click icons on the top right for direct message via email and links to my github and LinkedIn page (still under construction).
 * Happy exploring!
 
