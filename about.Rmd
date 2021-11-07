@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 Paula (Pinyi) Wu <br>
-• Email: pw2551@cumc.columbia.edu • Cell Phone: (585) 210-5186
+Email: pw2551@cumc.columbia.edu
 <br><br>
 
 ## EDUCATION
@@ -48,8 +48,8 @@ Jul. 2019 – Aug. 2019
 *Lab Teaching Assistant for CSC 161: Intro to Programming* <br>
 Sept. 2020 – May. 2021
 <ul>
-<li>Holding bi-weekly lab sessions, answering Python-related questions, offering coding help and
-instructions regarding weekly assignments and a 3-staged project based on different Python topics, grading lab assignments, projects, midterm, and final exams.
+<li>Held bi-weekly lab sessions, answered Python-related questions, offered coding help and
+instructions regarding weekly assignments and a 3-staged project based on different Python topics, graded lab assignments, projects, midterm, and final exam.
 </li>
 </ul>
 *Teaching Assistant for BCS 204: Lab in Cognitive Neuroscience*<br>
@@ -62,10 +62,7 @@ Sept. 2020 – Dec. 2020
 *Tutor for multiple subjects*<br>
 Feb. 2019 – May 2021
 <ul>
-<li>Tutoring peer students on a one-on-one basis in various subjects, including Brain and Cognitive Science, Biology, and Computer Science</li>
-</ul>
-<ul>
-<li>Answering questions regarding course materials, making test preparation plans, and advising overall study skills in specific subjects. A stipend on an hourly basis.</li>
+<li>Tutoring peer students on a one-on-one basis in various subjects, including Brain and Cognitive Science, Biology, and Computer Science. Answering questions regarding course materials, making test preparation plans, and advising overall study skills in specific subjects.</li>
 </ul>
 <br>
 
@@ -77,6 +74,7 @@ Feb. 2019 – May 2021
 <li>Foreign languages: native speaker of Mandarin, Japanese N2, intermediate learner of Spanish</li>
 </ul>
 
+<br>
 <p>You can also download my full Curriculum Vitae <a href="./images/cv_pw.pdf">here</a>.</p>
 
 

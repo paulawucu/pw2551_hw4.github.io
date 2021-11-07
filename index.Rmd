@@ -17,7 +17,7 @@ img {
 </style>
 <img src="images/honk_goose.jpeg" style="width:50%">
 
-My name is Paula. I am currently a first-year MS student in Biostatistics.  
+My name is Paula. I am currently a first-year MS student in Biostatistics. This is my website.
 
 <br>
 

@@ -20,9 +20,10 @@ library(lubridate)
 data(instacart)
 ```
 ```{r}
+# I am interested in exploring reorders in each department and their distributions through out a day/week.
 instacart = 
   instacart %>% 
-  select(reordered, order_dow, order_hour_of_day, product_name, aisle, department)
+  select(reordered, order_dow, order_hour_of_day, product_name, department)  # only select necessary columns
 ```
 
 
@@ -54,7 +55,7 @@ Column {data-width=350}
 ### Barplot
 
 ```{r, message=FALSE}
-# reordered times and department
+# department and numbers of reorders in total
 instacart %>% 
   count(department, reordered) %>% 
   filter(reordered == 1) %>%  # only focus on reorders
@@ -63,7 +64,7 @@ instacart %>%
   layout(
     title = "Numbers of Reorders in Each Department",
     xaxis = list(title="Department Name"),
-    yaxis = list(title="# of Reorder")
+    yaxis = list(title="# of Reorders")
   )
 ```
 
