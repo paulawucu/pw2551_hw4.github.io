@@ -2,11 +2,10 @@
 title: "Flexdashboard"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: rows
-    vertical_layout: fill
+    vertical_layout: scroll
     source: embed
 ---
-Back to the [homepage](index.html)
+Back to the [homepage](index.html); Scroll down for more
 ```{r setup, include=FALSE}
 library(flexdashboard)
 library(tidyverse)
@@ -25,10 +24,6 @@ instacart =
   instacart %>% 
   select(reordered, order_dow, order_hour_of_day, product_name, department)  # only select necessary columns
 ```
-
-
-Row {data-height=580}
------------------------------------------------------------------------
 
 ### Lineplot
 
@@ -49,8 +44,6 @@ instacart %>%
   )
 ```
 
-Row {data-height=420}
------------------------------------------------------------------------
 
 ### Barplot
 
