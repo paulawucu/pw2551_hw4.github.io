@@ -2,7 +2,7 @@
 title: "Flexdashboard"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: columns
+    orientation: rows
     vertical_layout: fill
     source: embed
 ---
@@ -27,7 +27,7 @@ instacart =
 ```
 
 
-Column {data-width=650}
+Row {data-height=580}
 -----------------------------------------------------------------------
 
 ### Lineplot
@@ -49,7 +49,7 @@ instacart %>%
   )
 ```
 
-Column {data-width=350}
+Row {data-height=420}
 -----------------------------------------------------------------------
 
 ### Barplot
